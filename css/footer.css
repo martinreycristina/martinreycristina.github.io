@@ -1,0 +1,21 @@
+/*
+Hoja de estilos para el footer.
+No todas las páginas diponen de footer.
+ */
+
+footer section {
+	width:43%;
+	float:left;
+	margin-right: 2%;
+}
+
+footer p > a{
+	width: 3em;
+	height: fit-content;
+	margin: 0 0.5em;
+	text-decoration-line: none;
+}
+
+footer a > img{
+	width: 3em;
+}

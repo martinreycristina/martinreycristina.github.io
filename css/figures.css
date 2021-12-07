@@ -1,0 +1,17 @@
+/*
+Aquí se implementarán los estilos referentes a las figuras.
+ */
+
+figure{
+	margin: 1em auto;
+}
+
+figcaption{
+	color: #4d4d4d;
+	margin: 1%;
+	text-align: center;
+}
+
+figcaption > a {
+	color: #6E26BA;
+}
