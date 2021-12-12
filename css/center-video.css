@@ -1,9 +1,0 @@
-/*
-Esta hoja de estilos se debe utilizar para lograr centrar un vídeo.
- */
-
-video{
-	display: block;
-	width: 100%;
-	margin: 0 auto;
-}

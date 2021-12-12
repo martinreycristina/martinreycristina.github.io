@@ -7,78 +7,91 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <!-- Hojas de estilo -->
-        <link rel="stylesheet" href="css/main.css" type="text/css" />
-        <link rel="stylesheet" href="css/blockquotes.css" type="text/css" />
-        <link rel="stylesheet" href="css/figures.css" type="text/css" />
-        <link rel="stylesheet" href="css/section-references-right.css" type="text/css" />
+        <link rel="stylesheet" href="css/uikit.css"/>
+
+        <!-- Scripts -->
+        <script src="js/uikit.js"></script>
+        <script src="js/uikit-icons.js"></script>
     </head>
     <body>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="curriculum.html">Currículum</a>
-            <a class="active" href="aficiones.html">Aficiones</a>
-            <a href="electro-music.html">Música Electrónica</a>
-        </nav>
-        <header>
-            <h1>Cristina Martín Rey</h1>
-            <h2>Ingeniera de Software</h2>
-        </header>
-        <main>
+    <header class="uk-width-1-1 uk-text-center">
+        <h1 class="uk-heading-medium">Cristina Martín Rey</h1>
+        <h2>Ingeniera de Software</h2>
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+            <nav class="uk-container uk-navbar uk-flex-center@s uk-flex-right uk-background-default">
+                <ul class="uk-subnav uk-subnav-pill uk-visible@s uk-padding-small">
+                    <li><a href="index.html"><span uk-icon="home"></span> Inicio</a></li>
+                    <li><a href="curriculum.html">Currículum</a></li>
+                    <li class="uk-active"><a href="aficiones.html">Aficiones</a></li>
+                    <li><a href="electro-music.html">Música Electrónica</a></li>
+                </ul>
+                <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+            </nav>
+        </div>
+        <div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+            <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-default">
+                    <li><a href="index.html"><span uk-icon="home"></span> Inicio</a></li>
+                    <li><a href="curriculum.html">Currículum</a></li>
+                    <li class="uk-active"><a href="aficiones.html">Aficiones</a></li>
+                    <li><a href="electro-music.html">Música Electrónica</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+        <main class="uk-padding">
+            <h3 class="uk-heading-medium">Aficiones</h3>
             <p>Me gustaría dedicar el siguiente espacio a compartir mis aficiones. ¡Espero que lo disfrutéis!</p>
-            <article>
-                <h3>Billar</h3>
+            <article class="uk-background-muted uk-padding uk-article">
+                <h4 class="uk-article-title">Billar</h4>
                 <p>
                     Hace pocos años descubrí este maravilloso juego y me enganchó desde el primer minuto. Nunca he sido muy buena pero llevo ya 5 años jugando
                     y ya sea con amigos o desconocidos, siempre me lo paso genial.
                 </p>
-                <blockquote>
-                    <p>El billar es un deporte de precisión que se practica impulsando con un taco un número variable de bolas (antiguamente de marfil),
+                <p>El billar es un deporte de precisión que se practica impulsando con un taco un número variable de bolas (antiguamente de marfil),
                     en una mesa con tablero de pizarra forrada de paño, rodeada de bandas de material elástico y con troneras o sin ellas.
-                        Tuvo la carta olímpica para los Juegos Olímpicos de 2004.</p>
-                    <i>wikipedia.org</i>
-                </blockquote>
+                    Tuvo la carta olímpica para los Juegos Olímpicos de 2004.</p>
                 <p>
                     Existen varias teorías en lo que se refiere a la aparición de este deporte, pero la más seguida sitúa su origen en la
-                    Francia del siglo XV. El artesano de Luis XII, Henry Devigne, habría creado una mesa para que los nobles y reyes pudiesen
+                    Francia del siglo XV. El artesano de Luis XII, <span lang="en">Henry Devigne</span>, habría creado una mesa para que los nobles y reyes pudiesen
                     jugar más cómodamente. Incluso se dice que el color verde del paño de las mesas de billar tradicionales buscaba recordar
                     la hierba sobre la que se jugaba ese deporte parecido al croquet.
                 </p>
-                <blockquote>
-                    <p>
-                        Ya a finales del siglo XVII apareció en Nueva Orleans (EEUU) un juego de billar diferente llamado Pool, el cual se hizo bastante famoso en los pubs americanos.
-                    </p>
-                    <i>debillar.org</i>
-                </blockquote>
-                <figure>
+                <p>
+                    Ya a finales del siglo XVII apareció en Nueva Orleans (<abbr>EEUU</abbr>) un juego de billar diferente llamado <span lang="en">Pool</span>, el cual se hizo bastante famoso en los pubs americanos.
+                </p>
+                <figure class="uk-width-1-2@m uk-margin-auto">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/London_-_Royal_Automobile_Club_-_2976.jpg"
                          alt="Salón de billar."/>
-                    <figcaption>
+                    <figcaption class="uk-text-center">
                         "<a href="https://es.wikipedia.org/wiki/Billar#/media/Archivo:London_-_Royal_Automobile_Club_-_2976.jpg">Salón de billar.</a>"
-                        por <a href="http://www.royan.com.ar">Jorge Royan</a> puede ser reutilizado
+                        por <a href="http://www.royan.com.ar" lang="en">Jorge Royan</a> puede ser reutilizado
                         bajo <a href="https://creativecommons.org/licenses/by-sa/3.0/">la licencia CC BY-SA 3.0</a>
                     </figcaption>
                 </figure>
+                <p class="uk-text-right"><em>Fuentes: wikipedia.org, debillar.org</em></p>
             </article>
-            <article>
-                <h3>Música electrónica</h3>
+            <article  class="uk-background-muted uk-padding uk-margin uk-article">
+                <h4 class="uk-article-title">Música electrónica</h4>
                 <p>
                     No es el tipo de música que la mayoría de gente querría escuchar en una fiesta, pero a mí me hace
                     mover el esqueleto.
                 </p>
-                <blockquote>
-                    <p>Se trata de un género que agrupa muchas formas musicales como el techno, big beat, drum and bass, trip hop, downtempo y ambient, por mencionar sólo algunas. A partir del 2010, se adoptaron otros géneros post rave como el electro house y el dubstep. Así que lo que llamamos “música electrónica” es en realidad, una amalgama de géneros y subgéneros, bailables y no bailables, que pertenecen a distintos períodos de tiempo.</p>
-                    <p>Aunque las nuevas generaciones crean que la electrónica es un género creado en los últimos 30 años, la realidad es que ya a finales del siglo XIX y principios del siglo XX se patentaron los primeros dispositivos para grabar sonidos de origen electrónico, como el fonoautógrafo. Pero fue apenas en la década de los 60 que los sintetizadores se volvieron un poco más accesibles para el público común, lo que permitió una oleada de experimentaciones musicales que dieron pie a lo que hoy en día llamamos música electrónica.</p>
-                    <i>www.listadiscoteca.net</i>
-                </blockquote>
-                <figure>
+                <p>Se trata de un género que agrupa muchas formas musicales como el <span lang="en">techno, big beat, drum and bass, trip hop, downtempo y ambient</span>, por mencionar sólo algunas. A partir del 2010, se adoptaron otros géneros post rave como el electro house y el dubstep. Así que lo que llamamos “música electrónica” es en realidad, una amalgama de géneros y subgéneros, bailables y no bailables, que pertenecen a distintos períodos de tiempo.</p>
+                <p>Aunque las nuevas generaciones crean que la electrónica es un género creado en los últimos 30 años, la realidad es que ya a finales del siglo XIX y principios del siglo XX se patentaron los primeros dispositivos para grabar sonidos de origen electrónico, como el <acronym>fonoautógrafo</acronym>. Pero fue apenas en la década de los 60 que los sintetizadores se volvieron un poco más accesibles para el público común, lo que permitió una oleada de experimentaciones musicales que dieron pie a lo que hoy en día llamamos música electrónica.</p>
+                <figure class="uk-width-1-2@m uk-margin-auto">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Tomorrowland-2017.jpg"
                          alt="Escenario Principal del festival de Tomorrowland (festival de música electrónica)"/>
-                    <figcaption>
-                        "<a href="https://es.wikipedia.org/wiki/Tomorrowland_(festival)#/media/Archivo:Tomorrowland-2017.jpg">Tomorrowland Mainstage 2017</a>"
+                    <figcaption class="uk-text-center">
+                        "<a href="https://es.wikipedia.org/wiki/Tomorrowland_(festival)#/media/Archivo:Tomorrowland-2017.jpg" lang="en">Tomorrowland Mainstage 2017</a>"
                         por EloyBr puede ser reutilizado bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/">la licencia CC BY-SA 4.0</a>
                     </figcaption>
                 </figure>
+                <p class="uk-text-right"><em>Fuentes: www.listadiscoteca.net</em></p>
             </article>
         </main>
     </body>
+    <footer class="uk-padding-small uk-text-center">
+        <a href="sitemap.html">Mapa del Sitio</a>
+    </footer>
 </html>

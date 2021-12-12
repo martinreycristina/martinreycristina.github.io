@@ -7,80 +7,104 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <!-- Hojas de estilo -->
-        <link rel="stylesheet" href="css/main.css" type="text/css" />
-        <link rel="stylesheet" href="css/footer.css" type="text/css" />
-        <link rel="stylesheet" href="css/center-video.css" type="text/css" />
-        <link rel="stylesheet" href="css/float-image-layout.css" type="text/css" />
+        <link rel="stylesheet" href="css/uikit.css"/>
+
+        <!-- Scripts -->
+        <script src="js/uikit.js"></script>
+        <script src="js/uikit-icons.js"></script>
     </head>
     <body>
-        <nav>
-            <a class="active" href="index.html">Inicio</a>
-            <a href="curriculum.html">Currículum</a>
-            <a href="aficiones.html">Aficiones</a>
-            <a href="electro-music.html">Música Electrónica</a>
-        </nav>
-        <header>
-            <h1>Cristina Martín Rey</h1>
-            <h2>Ingeniera de Software</h2>
-        </header>
-        <main>
-        <article>
-            <h3>Sobre mí</h3>
-            <img src="media/foto.jpg" alt="Foto de perfil de Cristina Martín Rey, la autora de esta página web."/>
-            <p>
-                Responsable y trabajadora, soy una mujer a la que le encantan los retos y es precisamente eso lo que más
-                me gusta de la informática.
-            </p>
-            <p>
-                Comencé el grado de ingeniería del software casi por casualidad y descubrí que verdaderamente me
-                apasionaba desde el primer año de carrera. Ahora que lo he terminado, mis deseos de aprender son cada
-                vez más grandes y espero que mis futuros proyectos y trabajos sacien estas ganas.
-            </p>
-            <p>
-                Durante mis estudios he tenido la oportunidad de trabajar junto a compañeros y profesores a los que
-                agradezco fuertemente su presencia y dedicación por hacer de la escuela un lugar divertido y acogedor.
-                Escuela que por otra parte me ha brindado oportunidades como la de trabajar en un proyecto ideado y
-                dirigido por Tim Berners-Lee, el creador de la Web tal y como hoy la conocemos.
-            </p>
-            <p>
-                Siento curiosidad por casi todas las ramas de ingeniería informática. De hecho, durante mi carrera
-                profesional he trabajado en proyectos relacionados con el Big Data, Videojuegos, Networking, ...
-                Pero estoy especialmente interesada en el desarrollo web. He trabajado en proyectos por cuenta propia y
-                ajena en el ámbito de la ingeniería web y todo ello me ha llevado a finalmente iniciar mis estudios en
-                el Máster de Ingeniería Web de la Universidad de Oviedo.
-            </p>
-            <p>
-                Si estás interesado/a en conocerme mejor
-                no dudes en contactarme, o si lo prefieres puedes seguir echándole un vistazo a mi página web. ¡Un saludo!
-            </p>
+    <header class="uk-width-1-1 uk-text-center">
+        <h1 class="uk-heading-medium">Cristina Martín Rey</h1>
+        <h2>Ingeniera de <span lang="en">Software</span></h2>
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+            <nav class="uk-container uk-navbar uk-flex-center@s uk-flex-right uk-background-default">
+                <ul class="uk-subnav uk-subnav-pill uk-visible@s uk-padding-small">
+                    <li class="uk-active"><a href="index.html"><span uk-icon="home"></span> Inicio</a></li>
+                    <li><a href="curriculum.html">Currículum</a></li>
+                    <li><a href="aficiones.html">Aficiones</a></li>
+                    <li><a href="electro-music.html">Música Electrónica</a></li>
+                </ul>
+                <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+            </nav>
+        </div>
+        <div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+            <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-active"><a href="index.html"><span uk-icon="home"></span> Inicio</a></li>
+                    <li><a href="curriculum.html">Currículum</a></li>
+                    <li><a href="aficiones.html">Aficiones</a></li>
+                    <li><a href="electro-music.html">Música Electrónica</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h3 class="uk-heading-medium uk-padding uk-padding-remove-bottom uk-padding-remove-top">Inicio</h3>
+        <article class="uk-article uk-padding">
+            <h3 class="uk-article-title">Sobre mí</h3>
+
+            <div class="uk-inline">
+                <img class="uk-width-1-4@l uk-width-1-2@m uk-padding-small uk-float-left"
+                     src="media/foto.jpg" alt="Foto de perfil de Cristina Martín Rey, la autora de esta página web."/>
+                <p>
+                    Responsable y trabajadora, soy una mujer a la que le encantan los retos y es precisamente eso lo que más
+                    me gusta de la <acronym>informática</acronym>.
+                </p>
+                <p>
+                    Comencé el grado de ingeniería del software casi por casualidad y descubrí que verdaderamente me
+                    apasionaba desde el primer año de carrera. Ahora que lo he terminado, mis deseos de aprender son cada
+                    vez más grandes y espero que mis futuros proyectos y trabajos sacien estas ganas.
+                </p>
+                <p>
+                    Durante mis estudios he tenido la oportunidad de trabajar junto a compañeros y profesores a los que
+                    agradezco fuertemente su presencia y dedicación por hacer de la escuela un lugar divertido y acogedor.
+                    Escuela que por otra parte me ha brindado oportunidades como la de trabajar en un proyecto ideado y
+                    dirigido por Tim Berners-Lee, el creador de la Web tal y como hoy la conocemos.
+                </p>
+                <p>
+                    Siento curiosidad por casi todas las ramas de ingeniería <acronym>informática</acronym>. De hecho, durante mi carrera
+                    profesional he trabajado en proyectos relacionados con el <span lang="en">Big Data, <acronym>Videojuegos</acronym>, Networking, ...</span>
+                    Pero estoy especialmente interesada en el desarrollo web. He trabajado en proyectos por cuenta propia y
+                    ajena en el ámbito de la ingeniería web y todo ello me ha llevado a finalmente iniciar mis estudios en
+                    el Máster de Ingeniería Web de la Universidad de Oviedo.
+                </p>
+                <p>
+                    Si estás interesado/a en conocerme mejor
+                    no dudes en contactarme, o si lo prefieres puedes seguir echándole un vistazo a mi página web. ¡Un saludo!
+                </p>
+            </div>
         </article>
-        <section>
-            <h3>Vídeo</h3>
+        <section class="uk-section uk-padding">
+            <h3 class="uk-heading-small">Vídeo</h3>
             <p>A continuación se muestra un vídeo en el que se incita a los visitantes de la página a ponerse en contacto
                 con la autora.</p>
-            <video src="media/video.mp4" controls></video>
+            <div class="uk-margin-auto uk-width-1-2@m">
+                <video controls>
+                    <source src="media/video.mp4" />
+                    <track default src="media/video-captions.vtt" kind="captions" srclang="es" label="Español" />
+                    <track default src="media/video-captions.vtt" kind="descriptions" srclang="es" label="Español" />
+                </video>
+            </div>
         </section>
-        </main>
-        <footer>
-            <section>
-                <h2>Otros Perfiles</h2>
-                <p>
-                <a href="https://github.com/martinreycristina">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/GitHub_Mark.png"
-                        alt="Logo de GitHub" />
-                </a>
-                <a href="https://www.linkedin.com/in/cristina-martín-rey/">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Linkedin_circle.svg"
-                         alt="logo de LinkedIn" />
-                </a>
-                </p>
-            </section>
-            <section>
-                <h2>Contacto</h2>
-                <p>Cristina Martín Rey</p>
-                <a href="mailto:UO255479@uniovi.es">UO255479@uniovi.es</a>
-                <p>Avilés, Principado de Asturias</p>
-            </section>
-        </footer>
+    </main>
+    <footer class="uk-padding-small uk-flex uk-flex-nowrap">
+        <section class="uk-padding-small uk-width-1-2@m">
+            <h3>Otros Perfiles</h3>
+            <a href="https://github.com/martinreycristina"
+               class="uk-icon-button uk-margin-small-right" uk-icon="icon: github; ratio: 3.5"></a>
+            <a href="https://www.linkedin.com/in/cristina-martín-rey/"
+               class="uk-icon-button" uk-icon="icon: linkedin; ratio: 3.5"></a>
+        </section>
+        <section class="uk-padding-small uk-width-1-2@m">
+            <h3>Contacto</h3>
+            <p>Cristina Martín Rey</p>
+            <a href="mailto:UO255479@uniovi.es">UO255479@uniovi.es</a>
+            <p>Avilés, Principado de Asturias</p>
+        </section>
+    </footer>
+    <footer class="uk-padding-small uk-text-center">
+        <a href="sitemap.html">Mapa del Sitio</a>
+    </footer>
     </body>
 </html>

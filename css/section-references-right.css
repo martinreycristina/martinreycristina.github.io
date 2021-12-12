@@ -1,9 +1,0 @@
-/*
-Esta hoja de estilos se debe utilizar para hacer que las referencias de las secciones en cursiva se
-posicionen a la derecha para una mayor legibilidad.
- */
-
-i{
-	display: block;
-	text-align: right;
-}

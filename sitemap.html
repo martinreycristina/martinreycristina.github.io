@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>UO255479 - Web Personal</title>
+        <meta name="author" content="Cristina Martín Rey" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Hojas de estilo -->
+        <link rel="stylesheet" href="css/uikit.css"/>
+
+        <!-- Scripts -->
+        <script src="js/uikit.js"></script>
+        <script src="js/uikit-icons.js"></script>
+    </head>
+    <body>
+    <header class="uk-width-1-1 uk-text-center">
+        <h1 class="uk-heading-medium">Cristina Martín Rey</h1>
+        <h2>Ingeniera de <span lang="en">Software</span></h2>
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+            <nav class="uk-container uk-navbar uk-flex-center@s uk-flex-right uk-background-default">
+                <ul class="uk-subnav uk-subnav-pill uk-visible@s uk-padding-small">
+                    <li class="uk-active"><a href="index.html"><span uk-icon="home"></span> Inicio</a></li>
+                    <li><a href="curriculum.html">Currículum</a></li>
+                    <li><a href="aficiones.html">Aficiones</a></li>
+                    <li><a href="electro-music.html">Música Electrónica</a></li>
+                </ul>
+                <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+            </nav>
+        </div>
+        <div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+            <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-active"><a href="index.html"><span uk-icon="home"></span> Inicio</a></li>
+                    <li><a href="curriculum.html">Currículum</a></li>
+                    <li><a href="aficiones.html">Aficiones</a></li>
+                    <li><a href="electro-music.html">Música Electrónica</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h3 class="uk-heading-medium uk-padding uk-padding-remove-bottom uk-padding-remove-top">Mapa del Sitio</h3>
+        <ul class="uk-padding uk-list uk-list-bullet">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="curriculum.html">Currículum</a></li>
+            <li><a href="aficiones.html">Aficiones</a></li>
+            <li><a href="electro-music.html">Música Electrónica</a></li>
+        </ul>
+    </main>
+    </body>
+</html>

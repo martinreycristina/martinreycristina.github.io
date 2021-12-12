@@ -7,86 +7,164 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <!-- Hojas de estilo -->
-        <link rel="stylesheet" href="css/main.css" type="text/css" />
-        <link rel="stylesheet" href="css/blockquotes.css" type="text/css" />
-        <link rel="stylesheet" href="css/figures.css" type="text/css" />
-        <link rel="stylesheet" href="css/section-references-right.css" type="text/css" />
+        <link rel="stylesheet" href="css/uikit.css"/>
+
+        <!-- Scripts -->
+        <script src="js/uikit.js"></script>
+        <script src="js/uikit-icons.js"></script>
+        <script src="js/resizeAudio.js"></script>
     </head>
     <body>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="curriculum.html">Currículum</a>
-            <a href="aficiones.html">Aficiones</a>
-            <a class="active" href="electro-music.html">Música Electrónica</a>
-        </nav>
-        <header>
-            <h1>Cristina Martín Rey</h1>
+        <header class="uk-width-1-1 uk-text-center">
+            <h1 class="uk-heading-medium">Cristina Martín Rey</h1>
             <h2>Ingeniera de Software</h2>
+            <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+                <nav class="uk-container uk-navbar uk-flex-center@s uk-flex-right uk-background-default">
+                    <ul class="uk-subnav uk-subnav-pill uk-visible@s uk-padding-small">
+                        <li><a href="index.html"><span uk-icon="home"></span> Inicio</a></li>
+                        <li><a href="curriculum.html">Currículum</a></li>
+                        <li><a href="aficiones.html">Aficiones</a></li>
+                        <li class="uk-active"><a href="electro-music.html">Música Electrónica</a></li>
+                    </ul>
+                    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+                </nav>
+            </div>
+            <div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+                <div class="uk-offcanvas-bar">
+                    <ul class="uk-nav uk-nav-default">
+                        <li><a href="index.html"><span uk-icon="home"></span> Inicio</a></li>
+                        <li><a href="curriculum.html">Currículum</a></li>
+                        <li><a href="aficiones.html">Aficiones</a></li>
+                        <li class="uk-active"><a href="electro-music.html">Música Electrónica</a></li>
+                    </ul>
+                </div>
+            </div>
         </header>
-        <main>
-            <article>
-                <h3>Orígenes e Historia de la Música Electrónica</h3>
+        <main class="uk-padding">
+            <h3 class="uk-heading-medium">Música Electrónica</h3>
+            <article class="uk-background-muted uk-padding uk-article">
+                <h4 class="uk-article-title">Orígenes e Historia de la Música Electrónica</h4>
                 <p>
-                    En este post relataré todo acerca de cuáles fueron orígenes de la música electrónica y descifraremos la
+                    En este post relataré todo acerca de cuáles fueron los orígenes de la música electrónica y descifraremos la
                     clave de su éxito a través de varios subgéneros y ejemplos.
                     Espero que lo disfrutéis.
                 </p>
-                <section>
+                <section class="uk-section">
                     <h4>¿Qué es la música electrónica?</h4>
-                    <blockquote>
-                        <p>La música electrónica es aquel tipo de música que emplea instrumentos musicales electrónicos y tecnología musical electrónica para su producción e interpretación. En general, se puede distinguir entre el sonido producido mediante la utilización de medios electromecánicos, de aquel producido mediante tecnología electrónica, que también pueden ser mezclados. Algunos ejemplos de dispositivos que producen sonido electro-mecánicamente son el telarmonio, el órgano Hammond y la guitarra eléctrica. La producción de sonidos puramente electrónicos pueden lograrse mediante aparatos como el theremin, el sintetizador de sonido o el ordenador.</p>
-                        <p>La música electrónica se asoció originalmente y de manera exclusiva a una forma de música culta occidental, pero desde finales del año 1960, la disponibilidad de tecnología musical a precios accesibles propició que la música producida por medios electrónicos se hiciera cada vez más popular. En la actualidad, la música electrónica presenta una gran variedad técnica y compositiva, abarcando desde formas de música culta experimental hasta formas populares como la música electrónica de baile o shuffle dance.</p>
-                        <i>wikipedia.org</i>
-                    </blockquote>
+                    <p>La música electrónica es aquel tipo de música que emplea instrumentos musicales electrónicos y
+                        tecnología musical electrónica para su producción e interpretación. En general, se puede distinguir
+                        entre el sonido producido mediante la utilización de medios <acronym>electromecánicos</acronym>, de aquel
+                        producido mediante tecnología electrónica, que también pueden ser mezclados. Algunos ejemplos de
+                        dispositivos que producen sonido <acronym>electro-mecánicamente</acronym> son el telarmonio, el
+                        órgano Hammond y la guitarra eléctrica. La producción de sonidos puramente electrónicos pueden
+                        lograrse mediante aparatos como el theremin, el sintetizador de sonido o el ordenador.</p>
+                    <p>La música electrónica se asoció originalmente y de manera exclusiva a una forma de música culta
+                        occidental, pero desde finales del año 1960, la disponibilidad de tecnología musical a precios
+                        accesibles propició que la música producida por medios electrónicos se hiciera cada vez más popular.
+                        En la actualidad, la música electrónica presenta una gran variedad técnica y compositiva, abarcando
+                        desde formas de música culta experimental hasta formas populares como la música electrónica de baile o <span lang="en">shuffle dance</span>.</p>
                     <figure>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Etherwave_Theremin_Kit.jpg"
                              alt="Theremín"/>
-                        <figcaption>
-                            "<a href="https://commons.wikimedia.org/wiki/File:Etherwave_Theremin_Kit.jpg">Etherwave Theremin from Robert Moog's kit</a>"
+                        <figcaption class="uk-text-center">
+                            "<a href="https://commons.wikimedia.org/wiki/File:Etherwave_Theremin_Kit.jpg" lang="en">Etherwave Theremin from Robert Moog's kit</a>"
                             por <a href="https://commons.wikimedia.org/wiki/User:Hutschi">Hutschi</a> puede ser reutilizado
                             bajo <a href="https://creativecommons.org/licenses/by-sa/3.0/">la licencia CC BY-SA 3.0</a>
                         </figcaption>
                     </figure>
                 </section>
-                <section>
-                    <h4>Los años 70</h4>
-                    <blockquote>
-                        <p>En esta década los sonidos electrónicos van cogiendo protagonismo, dejando atrás la experimentación anterior. La aparición de Kraftwerk y Jean-Michel Jarre fueron clave para hacer crecer la popularidad de la música electrónica. Cada vez la tendencia crecía más y otros rostros más populares hasta nuestros días como David Bowie o el grupo Pink Floyd fueron claves en la introducción del género.</p>
-                        <i>los40.com</i>
-                    </blockquote>
+                <section class="uk-section">
+                    <h5>Los años 70</h5>
+                    <p>En esta década los sonidos electrónicos van cogiendo protagonismo, dejando atrás la experimentación anterior.
+                        La aparición de Kraftwerk y Jean-Michel Jarre fueron clave para hacer crecer la popularidad de la
+                        música electrónica. Cada vez la tendencia crecía más y otros rostros más populares hasta nuestros días como
+                        David Bowie o el grupo Pink Floyd fueron claves en la introducción del género.</p>
                 </section>
-                <section>
-                    <h4>Los años 80</h4>
-                    <blockquote>
-                        <p>El sintetizador es el protagonista de esta época. En este año data el nacimiento de subgéneros electrónicos como el house, el techno o el electro. Por otra parte, en la misma sintonía, se encontraba el synthpop viviendo sus años dorados. Éste último se trata de una fusión del pop con toques de electrónica, predecesor del electropop. Aunque, bien es cierto que los años ochenta fueron unos años muy fructíferos para casi todos los géneros.</p>
-                        <p>En este marco temporal se encuentran bandas que han sido altamente influyentes en la historia de la música como Pet Shop Boys o Depeche Mode, entre otras muchas. Tal es la influencia musical y la riqueza de esta época que, en un panorama tan marcado por la vanguardia, la mayoría de los artistas y grupos no se pueden enmarcar dentro de un único género musical.</p>
-                        <i>los40.com</i>
-                    </blockquote>
+                <section class="uk-section">
+                    <h5>Los años 80</h5>
+                    <p>El sintetizador es el protagonista de esta época. En este año data el nacimiento de subgéneros electrónicos
+                        como el house, el techno o el electro. Por otra parte, en la misma sintonía, se encontraba el synthpop
+                        viviendo sus años dorados. Éste último se trata de una fusión del pop con toques de electrónica, predecesor del
+                        <acronym>electropop</acronym>. Aunque, bien es cierto que los años ochenta fueron unos años muy
+                        fructíferos para casi todos los géneros.</p>
+                    <p>En este marco temporal se encuentran bandas que han sido altamente influyentes en la historia de
+                        la música como Pet Shop Boys o Depeche Mode, entre otras muchas. Tal es la influencia musical y
+                        la riqueza de esta época que, en un panorama tan marcado por la vanguardia, la mayoría de los
+                        artistas y grupos no se pueden enmarcar dentro de un único género musical.</p>
                 </section>
-                <section>
-                    <h4>Los años 90</h4>
-                    <blockquote>
-                        <p>En esta década el sonido electrónico ya no es una novedad. Muchas artistas ya han experimentado con este género en años anteriores y ya se encuentra establecido. Tanto es así, que comienzan a nacer nuevos subgéneros dentro de la electrónica y dentro de aquellos que ya habían surgido como el hardstyle o el trance. Es la década en la que la electrónica conquista las pistas de baile. Estos años con han dejado joyas musicales como <cite>Pump Up The Jam</cite> de Technotronic o <cite>Rhythm</cite> of the Night de Corona, indudables clásicos de la música electrónica.</p>
-                        <p>Todos y cada uno de los antecedentes de la música electrónica han servido de inspiración para los artistas del género en la actualidad. La música electrónica, un estilo musical relativamente joven al que aún le queda mucho con lo que sorprender, como en los años más recientes ha seguido haciendo con nuevos sonidos como el dubstep.</p>
-                        <i>los40.com</i>
-                    </blockquote>
+                <section class="uk-section">
+                    <h5>Los años 90</h5>
+                    <p>En esta década el sonido electrónico ya no es una novedad. Muchas artistas ya han experimentado
+                        con este género en años anteriores y ya se encuentra establecido. Tanto es así, que comienzan a
+                        nacer nuevos subgéneros dentro de la electrónica y dentro de aquellos que ya habían surgido como
+                        el hardstyle o el trance. Es la década en la que la electrónica conquista las pistas de baile.
+                        Estos años con han dejado joyas musicales como <cite lang="en">Pump Up The Jam</cite> de Technotronic o
+                        <cite lang="en">Rhythm</cite> of the Night de Corona, indudables clásicos de la música electrónica.</p>
+                    <p>Todos y cada uno de los antecedentes de la música electrónica han servido de inspiración para los
+                        artistas del género en la actualidad. La música electrónica, un estilo musical relativamente
+                        joven al que aún le queda mucho con lo que sorprender, como en los años más recientes ha seguido
+                        haciendo con nuevos sonidos como el dubstep.</p>
                 </section>
-                <section>
-                    <h4>Desde los 2000 hasta la actualidad</h4>
-                    <blockquote>
-                        <p>A medida que la tecnología informática se hace más accesible y el software musical avanza, la producción musical es posible utilizando medios que no guardan ninguna relación con las prácticas tradicionales. Lo mismo ocurre con los conciertos, extendiéndose su práctica utilizando ordenadores portátiles y live coding. Se populariza el término Live PA para describir cualquier tipo de actuación en vivo de música electrónica, ya sea utilizando ordenador, sintetizador u otros dispositivos.</p>
-                        <p>En las décadas de 1990 y 2000 surgieron diferentes entornos virtuales de estudio construidos sobre software, entre los que destacan productos como Reason, de Propellerhead, y Ableton Live, que se hacen cada vez más populares. Estas herramientas proveen alternativas útiles y baratas para los estudios de producción basados en hardware. Gracias a los avances en la tecnología de microprocesadores, se hace posible crear música de elevada calidad utilizando poco más que un solo ordenador. Estos avances han democratizado la creación musical, incrementándose así masivamente y estando disponible al público en internet.</p>
-                        <p>El avance del software y de los entornos de producción virtuales ha llevado a que toda una serie de dispositivos, antiguamente solo existentes como hardware, estén ahora disponibles como piezas virtuales, herramientas o plugins de los software. Algunos de los softwares más populares son Max/Msp y Reaktor, así como paquetes de código abierto tales como Pure Data, SuperCollider y ChucK.</p>
-                        <p>Los avances en la miniaturización de los componentes electrónicos, que en su época facilitaron el acceso a instrumentos y tecnologías usadas solo por músicos con grandes recursos económicos, han dado lugar a una nueva revolución en las herramientas electrónicas usadas para la creación musical. Por ejemplo, durante los años 90, los teléfonos móviles incorporaban generadores de tonos monofónicos que algunas fábricas usaron no solo para generar los Ringtones de sus equipos, sino que permitieron a sus usuarios tener algunas herramientas de creación musical. Posteriormente, los cada vez más pequeños y potentes computadores portátiles, computadores de bolsillo y asistentes digitales personales (del inglés PDA) abrieron camino a las actuales tablets y teléfonos inteligentes que permiten no solo el uso de generadores de tono, sino el de otras herramientas como samplers, sintetizadores monofónicos y polifónicos, grabación multipista, etc. Los que permiten la creación musical en casi cualquier lugar.</p>
-                        <i>wikipedia.org</i>
-                    </blockquote>
+                <section class="uk-section">
+                    <h5>Desde los 2000 hasta la actualidad</h5>
+                    <p>A medida que la tecnología <acronym>informática</acronym> se hace más accesible y el software
+                        musical avanza, la producción musical es posible utilizando medios que no guardan ninguna relación
+                        con las prácticas tradicionales. Lo mismo ocurre con los conciertos, extendiéndose su práctica
+                        utilizando ordenadores portátiles y <span lang="en">live coding</span>. Se populariza el término
+                        <span lang="en">Live <acronym>PA</acronym></span> para describir cualquier tipo de actuación en
+                        vivo de música electrónica, ya sea utilizando ordenador, sintetizador u otros dispositivos.</p>
+                    <p>En las décadas de 1990 y 2000 surgieron diferentes entornos virtuales de estudio construidos sobre
+                        software, entre los que destacan productos como <cite lang="en">Reason</cite>, de Propellerhead,
+                        y <cite lang="en">Ableton Live</cite>, que se hacen cada vez más populares. Estas herramientas
+                        proveen alternativas útiles y baratas para los estudios de producción basados en hardware.
+                        Gracias a los avances en la tecnología de <acronym>microprocesadores</acronym>, se hace posible
+                        crear música de elevada calidad utilizando poco más que un solo ordenador. Estos avances han
+                        democratizado la creación musical, incrementándose así masivamente y estando disponible al público
+                        en <acronym>internet</acronym>.</p>
+                    <p>El avance del software y de los entornos de producción virtuales ha llevado a que toda una serie
+                        de dispositivos, antiguamente solo existentes como hardware, estén ahora disponibles como piezas
+                        virtuales, herramientas o plugins de los software. Algunos de los softwares más populares son
+                        <cite lang="en">Max/Msp</cite> y <cite lang="en">Reaktor</cite>, así como paquetes de código
+                        abierto tales como <cite lang="en">Pure Data</cite>, <cite lang="en">SuperCollider</cite> y
+                        <cite lang="en">ChucK</cite>.</p>
+                    <p>Los avances en la miniaturización de los componentes electrónicos, que en su época facilitaron el
+                        acceso a instrumentos y tecnologías usadas solo por músicos con grandes recursos económicos,
+                        han dado lugar a una nueva revolución en las herramientas electrónicas usadas para la creación
+                        musical. Por ejemplo, durante los años 90, los teléfonos móviles incorporaban generadores de tonos
+                        <acronym>monofónicos</acronym> que algunas fábricas usaron no solo para generar los <span lang="en">Ringtones</span>
+                        de sus equipos, sino que permitieron a sus usuarios tener algunas herramientas de creación musical.
+                        Posteriormente, los cada vez más pequeños y potentes computadores portátiles, computadores de bolsillo
+                        y asistentes digitales personales (del inglés <acronym lang="en">PDA</acronym>) abrieron camino a
+                        las actuales tablets y teléfonos inteligentes que permiten no solo el uso de generadores de tono,
+                        sino el de otras herramientas como <span lang="en">samplers</span>, sintetizadores
+                        <acronym>monofónicos</acronym> y <acronym>polifónicos</acronym>, grabación <acronym>multipista</acronym>, etc.
+                        Los que permiten la creación musical en casi cualquier lugar.</p>
                     <p>A continuación se muestran dos ejemplos de los hits más populares de música electrónica y dance que se cuelan en nuestras radios actualmente:</p>
                     <ol>
-                        <li>Canción <cite>Lovefool</cite> de twocolors: <br/><audio src="media/Lovefool.mp3" controls></audio></li>
-                        <li>Canción <cite>Hypnotized</cite> de Purple Disco Machine, Sophie and the Giants: <br/><audio src="media/Hypnotized.mp3" controls></audio></li>
+                        <li>Canción <cite lang="en">Lovefool</cite> de
+                            <span lang="en">twocolors</span>: <br/>
+                            <audio id="Lovefool" controls>
+                                <source src="media/Lovefool.mp3" />
+                                <track src="media/Lovefool.vtt" kind="captions" srclang="en" label="Inglés" />
+                            </audio>
+                            <p id="lovefool-display"></p>
+                        </li>
+                        <li>Canción <cite lang="en">Hypnotized</cite> de
+                            <span lang="en">Purple Disco Machine, Sophie and the Giants</span>: <br/>
+                            <audio id="Hypnotized" controls>
+                                <source src="media/Hypnotized.mp3" />
+                                <track src="media/Hypnotized.vtt" kind="captions" srclang="en" label="Inglés" />
+                            </audio>
+                            <p id="hypnotized-display"></p>
+                        </li>
                     </ol>
                 </section>
+                <p class="uk-text-right"><em>Fuentes: wikipedia.org, los40.com, youtube.es</em></p>
             </article>
         </main>
     </body>
+    <footer class="uk-padding-small uk-text-center">
+        <a href="sitemap.html">Mapa del Sitio</a>
+    </footer>
 </html>
+<script src="js/audio-captions.js"></script>
