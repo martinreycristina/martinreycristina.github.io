@@ -1,0 +1,15 @@
+/*
+    En esta hoja de estilos se especifica el estilo principal del sitio.
+*/
+
+a{
+    color: #0353B5;
+}
+
+.uk-subnav-pill > .uk-active > a{
+    background-color: #0353B5;
+}
+
+.uk-subnav-pill > * > :first-child{
+    color: #0353B5;
+}
