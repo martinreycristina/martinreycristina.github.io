@@ -2,6 +2,10 @@
     En esta hoja de estilos se especifica el estilo principal del sitio.
 */
 
+em{
+    color: #A40E2A;
+}
+
 a{
     color: #0353B5;
 }
